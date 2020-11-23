@@ -65,8 +65,13 @@
 import { onUpdated, ref } from 'vue';
 import { mapGetters, useStore } from 'vuex';
 
+// компенсационный компонент. я не разобрался
+// как расширить полигон МКАДа, и, в качестве компенсации
+// своих недоработок, написал простой лист, отражающий
+// историю маршрутов. по клику на итем листа 
+// отражается выбранный маршрут на карте.
 export default {
-  name: 'YaMap',
+  name: 'HistoryList',
   data() {
     return {
       openMenu: true,
